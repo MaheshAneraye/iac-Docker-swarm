@@ -1,0 +1,10 @@
+[managers]
+manager ansible_host=52.66.235.182 ansible_python_interpreter=/usr/bin/python3
+
+[workers]
+worker-1 ansible_host=3.110.55.40 ansible_python_interpreter=/usr/bin/python3
+worker-2 ansible_host=13.201.190.205 ansible_python_interpreter=/usr/bin/python3
+
+[all:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/mahesh/iac-Docker-swarm/terraform/docker-swarm.pem
