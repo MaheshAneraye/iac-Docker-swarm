@@ -49,23 +49,27 @@ iac-Docker-swarm/<br>
 
 cd iac-docker-swarm/terraform
 
-Update variables: Modify the variable.tf file to set the desired values for your AWS resources.
+### Update variables: 
+Modify the variable.tf file to set the desired values for your AWS resources.
 
-Initialize Terraform:
+### Initialize Terraform:
 terraform init
 
-Create the infrastructure:
+### Create the infrastructure:
 terraform apply
 
-Outputs
+### Outputs
 After running terraform apply, the IP addresses of the EC2 instances will be displayed. These IPs can be used for further configuration or access.
 
 
-Configure Ansible: Navigate to the Ansible directory and update the inventory file with the IP addresses outputted by Terraform.
+### Configure Ansible: 
+Navigate to the Ansible directory and update the inventory file with the IP addresses outputted by Terraform.
 
-Run the Ansible playbook: Execute the Ansible playbook to set up Docker Swarm:
+### Run the Ansible playbook: 
+Execute the Ansible playbook to set up Docker Swarm:
 
 cd ansible/inventory
+
 ansible-playbook -i inventory playbook.yaml
 
 
