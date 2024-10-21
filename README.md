@@ -4,21 +4,21 @@ This repository contains Infrastructure as Code (IaC) configuration for setting 
 
 ## Repository Structure
 
-iac-Docker-swarm/
-├── ansible
-│   └── inventory
-│       ├── ansible.cfg
-│       ├── inventory
-│       └── playbook.yaml
-└── terraform
-    ├── bash.sh
-    ├── docker-swarm.pem
-    ├── main.tf
-    ├── output.tf
-    ├── security_group.tf
-    ├── terraform.tfstate
-    ├── terraform.tfstate.backup
-    └── variable.tf
+iac-Docker-swarm/<br>
+├── ansible<br>
+│   └── inventory<br>
+│       ├── ansible.cfg<br>
+│       ├── inventory<br>
+│       └── playbook.yaml<br>
+└── terraform<br>
+    ├── bash.sh<br>
+    ├── docker-swarm.pem<br>
+    ├── main.tf<br>
+    ├── output.tf<br>
+    ├── security_group.tf<br>
+    ├── terraform.tfstate<br>
+    ├── terraform.tfstate.backup<br>
+    └── variable.tf<br>
 
 ### Terraform Configuration
 
