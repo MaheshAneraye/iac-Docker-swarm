@@ -92,7 +92,7 @@ This repository includes a GitHub Actions workflow that automatically runs the A
 To use this workflow:
 
 1. Ensure that your Ansible playbook and inventory file are correctly set up.
-2. Make changes to the `ansible/inventory/inventory` file as needed.(change ansibel_host=IP addresses outputted by Terraform.)
+2. Make changes to the `ansible/inventory/inventory` file as needed. (change ansible_host=IP addresses outputted by Terraform.)
 3. Commit and push the changes to the `main` branch of your repository.
 4. The GitHub Actions workflow will automatically run, executing the playbook with the updated inventory.
 
