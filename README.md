@@ -73,4 +73,27 @@ cd ansible/inventory
 ansible-playbook -i inventory playbook.yaml
 
 
+## GitHub Actions Workflow
+
+This repository includes a GitHub Actions workflow that automatically runs the Ansible playbook whenever changes are made to the `ansible/inventory/inventory` file. The workflow is defined in `.github/workflows/docker-swarm.yml`.
+
+### Workflow Trigger
+
+- The workflow is triggered on pushes to the `main` branch specifically when there are changes to the `ansible/inventory/inventory` file.
+
+### Workflow Steps
+
+1. **Checkout code**: The workflow checks out the repository code to access the necessary files.
+2. **Install Ansible**: It installs Ansible on the GitHub Actions runner.
+3. **Run Ansible Playbook**: Finally, it executes the Ansible playbook using the updated inventory file.
+
+### Usage
+
+To use this workflow:
+
+1. Ensure that your Ansible playbook and inventory file are correctly set up.
+2. Make changes to the `ansible/inventory/inventory` file as needed.(change ansibel_host=IP addresses outputted by Terraform.)
+3. Commit and push the changes to the `main` branch of your repository.
+4. The GitHub Actions workflow will automatically run, executing the playbook with the updated inventory.
+
 Feel free to modify any part of this template to fit your project’s specifics!
